@@ -6,7 +6,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 const DiscordBoats = require("dboats-api");
-const boats = new DiscordBoats({token: "OjCviPpG5OVQ8h0psV8rRNkfoSgyzx"});
+const boats = new DiscordBoats({token: (config.api)});
 
 const dbs = client.guilds.get('421630709585805312');
 const gingey = client.guilds.get('425517015869030400');
